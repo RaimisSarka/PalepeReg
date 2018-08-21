@@ -4,84 +4,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/red_brikcs"
-    tools:context=".MainActivity">
+    tools:context=".AdminSettingsActivity">
 
+    <!--Pirmas stalas-->
     <FrameLayout
-        android:id="@+id/rezervavimas_fl"
-        android:layout_width="match_parent"
+        android:id="@+id/stalas1_uzimtas_fl"
+        android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/layout_borders"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/Label_stalas1">
 
         <TextView
-            android:id="@+id/edit_employments_tv"
+            android:id="@+id/stalas1_uzimtas_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
-            android:text="Stalų rezervavimas"
+            android:text="Playing"
             android:textAlignment="center"
             android:textColor="#49abd9"
             android:textSize="24sp" />
-
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/info_button_fl"
-        android:layout_width="match_parent"
+        android:id="@+id/stalas1_rezervuotas_fl"
+        android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/layout_borders"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rezervavimas_fl">
+        app:layout_constraintTop_toBottomOf="@+id/stalas1_uzimtas_fl">
 
         <TextView
-            android:id="@+id/edit_employments_tv2"
+            android:id="@+id/stalas1_rezervuotas_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
-            android:text="Informacija"
+            android:text="Reserved"
             android:textAlignment="center"
             android:textColor="#49abd9"
             android:textSize="24sp" />
-
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/admin_settings_button_fl"
-        android:layout_width="match_parent"
+        android:id="@+id/stalas1_laisvas_fl"
+        android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/layout_borders"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/info_button_fl">
+        app:layout_constraintTop_toBottomOf="@+id/stalas1_rezervuotas_fl">
 
         <TextView
-            android:id="@+id/admin_settings_tv"
+            android:id="@+id/stalas1_laisvas_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
-            android:text="Nustatymai"
+            android:text="Free"
             android:textAlignment="center"
             android:textColor="#49abd9"
             android:textSize="24sp" />
-
     </FrameLayout>
+
+    <TextView
+        android:id="@+id/Label_stalas1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Stalas 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

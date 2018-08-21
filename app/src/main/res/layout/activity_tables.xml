@@ -35,20 +35,32 @@
 
             <FrameLayout
                 android:id="@+id/stalas1_fl"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:layout_weight="50"
-                android:background="@android:color/holo_blue_dark">
+                android:background="@drawable/table1">
+
+                <TextView
+                    android:id="@+id/stalas1_busena_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#151414"
+                    android:ellipsize="middle"
+                    android:padding="5dp"
+                    android:text="Laisvas"
+                    android:textColor="@android:color/holo_green_light"
+                    android:textStyle="bold"
+                    tools:text="Busena" />
             </FrameLayout>
 
             <FrameLayout
                 android:id="@+id/stalas4_fl"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:layout_weight="50"
-                android:background="@android:color/holo_blue_dark"></FrameLayout>
+                android:background="@drawable/table4"></FrameLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -61,21 +73,21 @@
 
             <FrameLayout
                 android:id="@+id/stalas2_fl"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:layout_weight="50"
-                android:background="@android:color/holo_blue_dark">
+                android:background="@drawable/table2">
 
             </FrameLayout>
 
             <FrameLayout
                 android:id="@+id/stalas3_fl"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:layout_weight="50"
-                android:background="@android:color/holo_blue_dark">
+                android:background="@drawable/table3">
 
             </FrameLayout>
         </LinearLayout>
